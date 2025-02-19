@@ -1,0 +1,12 @@
+### Generate documentation
+POST http://localhost:7136/api/GenerateDocumentationHttpDemo
+
+
+### Approve documentation (requires a valid requestId from the previous step)
+POST http://localhost:7136/api/ApproveDocumentation
+Content-Type: application/json
+
+{
+  "requestId": "copy the requestId from the previous step",
+  "approver": "approver123"
+}
